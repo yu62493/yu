@@ -11,7 +11,6 @@
 >>a. ionic/CIL --> 現場分倉物料管理,透過QR_CODE 進行領料,庫存量查詢  
 
 >>b. ionic/CRCheckList --> 產線設備點檢作業,透過 NFC 進行設備點檢  
-
 >>c. DRF/CRCheck --> DRF 提供上述兩項作業資料處理 api  
 
 
