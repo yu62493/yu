@@ -2,6 +2,7 @@
 
 > C4fun : 收錄一下玩票的作業
 >>a. TinyPython --> 建立一個讓自己方便的小工具, 包含 查詢 Oracle RDB, 周報告自動產生 等等
+>>b. stock --> 爬取股票資訊 存入docker 建立的 postgresql 中, 並練習 python zip 與 threading 的應用
         
 > LinebotCTM : 建立一個提供客訴單位查詢 自動回覆 產品相關資訊系統 (包含訂單 產品生產資訊 缺陷圖片 等等)
 

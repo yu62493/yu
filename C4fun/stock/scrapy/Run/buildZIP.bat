@@ -1,0 +1,1 @@
+python -m zipfile -c stock_run.zip __main__.py stock_daily.py stock_After.py stock_t86.py
