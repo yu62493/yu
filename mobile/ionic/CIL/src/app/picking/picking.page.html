@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>領料作業</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="QRScan()">QR CODE</ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>料號</ion-col>
+      <ion-col>{{ this.MTL_NO }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>數量</ion-col>
+      <ion-col><ion-input type="number" value="1" [(ngModel)]="TAKE_QTY"></ion-input></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-label position="stacked">QR CODE Content</ion-label>
+      <ion-textarea>{{ this.QRCodeText }}</ion-textarea>
+    </ion-row>
+  </ion-grid>
+  <ion-button expand="full" color="primary" (click)="sendPostRequest()">更新資料</ion-button>
+</ion-content>

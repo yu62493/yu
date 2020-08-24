@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>YUSCO</ion-title>
+      <ion-buttons slot="primary">
+        <ion-button [routerLink]="['/login']" class="button_large">
+          <ion-icon slot="icon-only" name ="log-in"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button class="button_large">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>        
+      </ion-buttons>
+    </ion-toolbar>  
+</ion-header>
+
+<ion-content padding>
+  <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+    <ion-label>目前登入者 : {{this.userid}} (如非本人請重新登入)</ion-label>
+    <ion-button expand="block" color="danger" size="large" [routerLink]="['/cr-nfc', {ckdata: []}]" class="button_large">感應式點檢</ion-button>  
+    <ion-button expand="block" color="tertiary" size="large" [routerLink]="['/cr-login']" class="button_large">選單式點檢</ion-button>
+    <ion-button expand="block" color="medium" size="large" class="button_large">備品盤點</ion-button>
+  </ion-col>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title size='small'>Copyright by 生產資訊處 TinyYu 2019</ion-title>
+  </ion-toolbar>
+</ion-footer>

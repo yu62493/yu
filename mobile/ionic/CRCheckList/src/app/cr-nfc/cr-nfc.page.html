@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>CR NFC</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button text="首頁" icon="home" [routerLink]="['/home']" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>  
+</ion-header>
+
+<ion-content padding>
+<h1>請靠近NFC tag 進行設備點檢</h1>
+<ion-label>{{EMPLNO}} 正進行NFC感應作業 (非該員請登出後,重新進入使用)</ion-label>
+<div *ngIf="DEVICE_NAME">
+    <ion-label >完成 {{DEVICE_NAME}} - {{CK_LOCATION}} 檢查</ion-label>
+</div>
+<!-- <ion-button size="large" (click)="listenToNdef()">NFC感應</ion-button>         -->
+
+</ion-content>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>yusco_D.jpg</file>
+  </qresource>
+</RCC>
