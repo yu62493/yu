@@ -11,6 +11,7 @@
 >>b. ionic/CRCheckList --> 產線設備點檢作業,透過 NFC 進行設備點檢  
 >>c. DRF/CRCheck --> DRF 提供上述兩項作業資料處理 api  
 
+> SourceBackup : 進行OpenVMS上 software source download backup
 
 > WebScrapy : 透過爬蟲自動化抓取產業相關資料,以供公司決策單位進行產業分析
 
